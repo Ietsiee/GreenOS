@@ -4,7 +4,7 @@ set -e
 cd "$HOME/GreenOS"
 
 echo "Downloading Linux Kernel 6.18.38 (Longterm)..."
-wget -q -O linux.tar.xz https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.38.t>
+wget -q -O linux.tar.xz https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.38.tar.xz
 
 echo "Extracting..."
 tar -xf linux.tar.xz

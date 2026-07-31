@@ -6,7 +6,7 @@ cd "$HOME"
 rm -rf "$HOME/GreenOS"
 
 echo "Cloning GreenOS..."
-git clone https://github.com/Ietsiee/GreenOS.git
+git clone -q https://github.com/Ietsiee/GreenOS.git
 
 sh "$HOME/GreenOS/scripts/rootfs.sh"
 echo "Done!"
