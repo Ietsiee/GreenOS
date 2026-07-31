@@ -3,7 +3,8 @@ set -e
 
 rm -rf ~/GreenOS
 
-cp -r ~/GreenOS ~/GreenOS
+echo "Cloning GreenOS..."
+git clone --depth 1 https://github.com/Ietsiee/GreenOS.git
 
 echo "Creating rootfs..."
 mkdir -p "$HOME/GreenOS/rootfs"
