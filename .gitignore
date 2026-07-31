@@ -3,5 +3,8 @@
 /ifetch/
 /ifetch-main/
 
+/rootfs/*
+!/rootfs/init
+
 linux.tar.xz
 ifetch.tar.gz
