@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+cd
+
 rm -rf ~/GreenOS
 
 echo "Cloning GreenOS..."
