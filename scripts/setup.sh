@@ -3,7 +3,7 @@ set -e
 
 rm -rf ~/GreenOS
 
-cp -r ~/OS ~/GreenOS
+cp -r ~/GreenOS ~/GreenOS
 
 echo "Creating rootfs..."
 mkdir -p "$HOME/GreenOS/rootfs"
