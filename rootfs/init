@@ -7,6 +7,5 @@ mount -t devtmpfs devtmpfs /dev
 echo
 echo "Welcome to GreenOS"
 echo
-echo "Run green-setup to start the setup"
 
 exec setsid cttyhack /bin/sh
