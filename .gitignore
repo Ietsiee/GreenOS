@@ -5,6 +5,7 @@
 
 /rootfs/*
 !/rootfs/init
+!/rootfs/etc/
 
 linux.tar.xz
 ifetch.tar.gz

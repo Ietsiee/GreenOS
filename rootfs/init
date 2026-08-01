@@ -6,5 +6,6 @@ mount -t devtmpfs devtmpfs /dev
 
 echo
 echo "Welcome to GreenOS"
+echo
 
 exec setsid cttyhack /bin/sh
