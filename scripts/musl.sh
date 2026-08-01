@@ -14,4 +14,4 @@ echo "Removing musl.tgz..."
 rm musl.tgz
 
 echo "Copying musl to rootfs..."
-cp -a "$HOME/GreenOS/musl/." "$HOME/GreenOS/rootfs/"
+cp -a "$HOME/GreenOS/musl" "$HOME/GreenOS/rootfs/"
