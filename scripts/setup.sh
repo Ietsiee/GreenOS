@@ -10,7 +10,6 @@ git clone -q https://github.com/Ietsiee/GreenOS.git
 
 echo "Creating GreenOS..."
 
-
 sh "$HOME/GreenOS/scripts/rootfs.sh"
 echo "Done!"
 
