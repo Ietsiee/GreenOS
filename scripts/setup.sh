@@ -19,6 +19,9 @@ echo "Done!"
 sh "$HOME/GreenOS/scripts/busybox.sh"
 echo "Done!"
 
+sh "$HOME/GreenOS/scripts/musl.sh"
+echo "Done!"
+
 echo "Setup done!"
 echo
 echo "To build linux run: sh ~/GreenOS/scripts/build-linux.sh"

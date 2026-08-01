@@ -1,7 +1,6 @@
 /linux/
 /busybox/
-/ifetch/
-/ifetch-main/
+/musl/
 
 /rootfs/*
 !/rootfs/init
@@ -9,6 +8,7 @@
 
 linux.tar.xz
 ifetch.tar.gz
+musl.tgz
 
 bzImage
 rootfs.img
