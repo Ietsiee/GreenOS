@@ -23,6 +23,7 @@ sh "$HOME/GreenOS/scripts/ifetch.sh"
 echo "Done!"
 
 echo "Setup done!"
+echo
 echo "To build linux run: sh ~/GreenOS/scripts/build-linux.sh"
 echo "To build busybox run: sh ~/GreenOS/scripts/build-busybox.sh"
 echo
