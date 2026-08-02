@@ -17,7 +17,7 @@ To create the **ISO**, you need to install these **build dependencies:**
 - wget
 - tar
 - gzip
-- GRUB
+- grub
 - cpio
 - xorriso
 
@@ -30,5 +30,10 @@ These **dependencies** may have different **package names** depending on your **
 - flex
 - bison
 - perl
+- meson
+- ninja
+- cmake
+- pkg-config
+- python
 
 To start the **setup** run: ```curl -fsSL https://raw.githubusercontent.com/Ietsiee/GreenOS/main/scripts/setup.sh | sh``` The **setup.sh** script will clone **GreenOS**, create the **rootfs**, build **Linux** and **BusyBox**, and create the **ISO** at the end.
