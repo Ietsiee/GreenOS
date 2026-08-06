@@ -11,3 +11,6 @@ chmod 1777 "$HOME/GreenOS/rootfs/tmp"
 
 echo "Creating init to rootfs..."
 chmod +x "$HOME/GreenOS/rootfs/init"
+
+echo "Creating green to rootfs..."
+chmod +x "$HOME/GreenOS/rootfs/bin/green"

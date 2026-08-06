@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 cd "$HOME/GreenOS/linux"
 
@@ -10,4 +11,3 @@ echo "Copying bzImage..."
 cp "$HOME/GreenOS/linux/arch/x86/bzImage" "$HOME/GreenOS/GreenOS/boot/bzImage"
 echo "Done!"
 
-echo "build-linux done!"

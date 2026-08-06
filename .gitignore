@@ -1,14 +1,12 @@
 /linux/
 /busybox/
-/musl/
 
 /rootfs/*
 !/rootfs/init
 !/rootfs/etc/
+!/rootfs/bin/green
 
 linux.tar.xz
-ifetch.tar.gz
-musl.tgz
 
 bzImage
 rootfs.img

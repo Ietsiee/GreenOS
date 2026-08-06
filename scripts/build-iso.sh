@@ -13,3 +13,4 @@ echo "Done!"
 
 echo "Building GreenOS.iso..."
 grub-mkrescue -o "$HOME/GreenOS/GreenOS.iso" "$HOME/GreenOS/GreenOS"
+echo "Done!"

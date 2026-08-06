@@ -11,19 +11,22 @@ git clone -q https://github.com/Ietsiee/GreenOS.git
 echo "Creating GreenOS..."
 
 sh "$HOME/GreenOS/scripts/rootfs.sh"
-echo "Done!"
+echo "Done! rootfs"
 
 sh "$HOME/GreenOS/scripts/linux.sh"
-echo "Done!"
+echo "Done! Linux"
 
 sh "$HOME/GreenOS/scripts/busybox.sh"
-echo "Done!"
+echo "Done! BusyBox"
 
-echo "Setup done!"
+sh "$HOME/GreenOS/scripts/build-linux.sh"
+echo "Done! Build-Linux"
+
+sh "$HOME/GreenOS/scripts/build-busybox.sh"
+echo "Done! Build-BusyBox"
+
+sh "$HOME/GreenOS/scripts/build-iso.sh"
+ech "Done! Build-ISO"
+
 echo
-echo "To build linux run: sh ~/GreenOS/scripts/build-linux.sh"
-echo "To build busybox run: sh ~/GreenOS/scripts/build-busybox.sh"
-echo "To build busybox run: sh ~/GreenOS/scripts/build-mango.sh"
-echo
-echo "To build the iso run: sh ~/GreenOS/scripts/build-iso.sh"
-echo "Note: this will only work when you have build linux, mango and busybox"
+echo "Done! Setup"
