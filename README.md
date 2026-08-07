@@ -6,6 +6,9 @@
 - **Linux** as the kernel
 - **BusyBox** as userland
 - **GRUB** as bootloader
+- **green** as package manager
+- **Quad9** as default DNS resolver
+- **doas** as root privileges manager
 
 ## Installation
 To install **GreenOS**, you can choose between building the **ISO** yourself (see [Creating ISO](#creating-iso)) or simply downloading the latest release here (coming soon)
@@ -30,10 +33,6 @@ These **dependencies** may have different **package names** depending on your **
 - flex
 - bison
 - perl
-- meson
-- ninja
-- cmake
 - pkg-config
-- python
 
 To start the **setup** run: ```curl -fsSL https://raw.githubusercontent.com/Ietsiee/GreenOS/main/scripts/setup.sh | sh``` The **setup.sh** script will clone **GreenOS**, create the **rootfs**, build **Linux** and **BusyBox**, and create the **ISO** at the end.

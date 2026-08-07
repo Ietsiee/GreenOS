@@ -4,7 +4,8 @@ set -e
 cd "$HOME/GreenOS/rootfs"
 
 echo "Creating rootfs..."
-mkdir -p bin sbin etc proc sys dev tmp lib usr
+mkdir -p bin sbin etc proc sys dev tmp lib
+mkdir -p "$HOME/GreenOS/rootfs/usr/{bin,lib,share,local/{bin,lib,share}}"
 
 echo "Creating /tmp to rootfs..."
 chmod 1777 "$HOME/GreenOS/rootfs/tmp"
