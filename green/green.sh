@@ -24,23 +24,26 @@ case "$ACTION" in
         echo "Loading $PKG.conf..."
         . "/tmp/$PKG.conf"       
 
-        mkdir -p "/tmp/$PKG"
+        mkdir -p "/tmp/$package"
 
         echo "Downloading source..."
-        wget -q -O "/tmp/$PKG/$PKG.$type" "$source"
+        wget -q -O "/tmp/$package/$package.$type" "$source"
 
         echo "Extracting..."
-        tar -xf "/tmp/$PKG/$PKG.$type" -C "/tmp/$PKG"
+        tar -xf "/tmp/$package/$package.$type" -C "/tmp/$package"
 
-        cd "/tmp/$PKG"
+        echo "Preparing..."
+        eval "$prepare"
 
-        echo "Building $PKG..."
+        cd "/tmp/$package"
+
+        echo "Building $package..."
         eval "$build"
 
-        echo "Installing $PKG..."
+        echo "Installing $package..."
         eval "$install"
 
-        echo "Succesfully installed $PKG!"
+        echo "Succesfully installed $package!"
         ;;
 
     *)
