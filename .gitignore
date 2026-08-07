@@ -4,8 +4,6 @@
 /rootfs/*
 !/rootfs/init
 !/rootfs/etc/
-!/rootfs/bin/**
-!/rootfs/bin/green
 
 linux.tar.xz
 

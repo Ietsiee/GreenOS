@@ -13,4 +13,5 @@ echo "Creating init to rootfs..."
 chmod +x "$HOME/GreenOS/rootfs/init"
 
 echo "Creating green to rootfs..."
+cp "$HOME/GreenOS/green/green.sh" "$HOME/GreenOS/rootfs/bin/green"
 chmod +x "$HOME/GreenOS/rootfs/bin/green"
