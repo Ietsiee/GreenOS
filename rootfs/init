@@ -9,3 +9,5 @@ echo "Welcome to GreenOS"
 echo
 
 exec setsid cttyhack /bin/sh
+
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin"

@@ -8,22 +8,15 @@ rm -rf "$HOME/GreenOS"
 echo "Cloning GreenOS..."
 git clone -q https://github.com/Ietsiee/GreenOS.git
 
-echo "Creating GreenOS..."
-
 sh "$HOME/GreenOS/scripts/rootfs.sh"
-echo "Done! rootfs"
 
-sh "$HOME/GreenOS/scripts/linux.sh"
-echo "Done! Linux"
-
-sh "$HOME/GreenOS/scripts/doas.sh"
-echo "Done! Doas"
+sh "$HOME/GreenOS/scripts/e2fsprogs.sh"
 
 sh "$HOME/GreenOS/scripts/busybox.sh"
-echo "Done! BusyBox"
 
-sh "$HOME/GreenOS/scripts/build-iso.sh"
-ech "Done! Build-ISO"
+sh "$HOME/GreenOS/scripts/linux.sh"
+
+sh "$HOME/GreenOS/scripts/iso.sh"
 
 echo
-echo "Done! Setup"
+echo "Done! setup"

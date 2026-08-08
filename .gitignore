@@ -1,6 +1,5 @@
 /linux/
 /busybox/
-/opendoas/
 
 /rootfs/*
 !/rootfs/init

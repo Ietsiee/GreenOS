@@ -8,6 +8,10 @@ git clone -q --depth 1 --single-branch https://git.busybox.net/busybox.git
 
 cd "$HOME/GreenOS/busybox"
 
-echo "Building busybox..."
+echo "Configuring busybox..."
 cp "$HOME/GreenOS/software/busybox/.config" "$HOME/GreenOS/busybox/.config"
+
+echo "Building busybox..."
 make install CONFIG_PREFIX="$HOME/GreenOS/rootfs"
+
+echo "Done! busybox"
