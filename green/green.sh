@@ -26,24 +26,27 @@ case "$ACTION" in
 
         mkdir -p "/tmp/$package"
 
-        echo "Downloading source..."
-        wget -q -O "/tmp/$package/$package.$type" "$source"
+        echo "Downloading $PKG..."
+        wget -q -O "/tmp/$package/$PKG.$type" "$source"
 
-        echo "Extracting..."
-        tar -xf "/tmp/$package/$package.$type" -C "/tmp/$package"
+        echo "Extracting $PKG..."
+        tar -xf "/tmp/$package/$PKG.$type" -C "/tmp/$PKG"
 
-        echo "Preparing..."
+        echo "Preparing $PKG..."
         eval "$prepare"
 
         cd "/tmp/$package"
 
-        echo "Building $package..."
+        echo "Configuring $PKG..."
+        eval "$configure"
+
+        echo "Building $PKG..."
         eval "$build"
 
-        echo "Installing $package..."
+        echo "Installing $PKG..."
         eval "$install"
 
-        echo "Succesfully installed $package!"
+        echo "Succesfully installed $PKG!"
         ;;
 
     *)

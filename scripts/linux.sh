@@ -3,6 +3,8 @@ set -e
 
 cd "$HOME/GreenOS"
 
+rm -rf linux
+
 echo "Downloading linux..."
 wget -q -O linux.tar.xz https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.38.tar.xz
 

@@ -1,5 +1,6 @@
 /linux/
 /busybox/
+/e2fsprogs/
 
 /rootfs/*
 !/rootfs/init

@@ -3,6 +3,8 @@ set -e
 
 cd "$HOME/GreenOS"
 
+rm -rf busybox
+
 echo "Cloning busybox..."
 git clone -q --depth 1 --single-branch https://git.busybox.net/busybox.git
 
