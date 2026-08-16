@@ -14,6 +14,7 @@ echo "Configuring busybox..."
 cp "$HOME/GreenOS/software/busybox/.config" "$HOME/GreenOS/busybox/.config"
 
 echo "Building busybox..."
+make -j$(nproc)
 make install CONFIG_PREFIX="$HOME/GreenOS/rootfs"
 
 echo "Done! busybox"
